@@ -19,12 +19,7 @@ public class SudokuTest {
 	
 	@Test
 	public void sudokuHasABoardTest() {
-		assertArrayEquals(new int[9][9], sudoku.getModel() );
-	}
-	
-	@Test
-	public void sudokuHas9Rows() {
-		fail("Not yet implemented");
+		assertArrayEquals(createModel(), sudoku.getModel() );
 	}
 	
 	private int[][] createModel() {
